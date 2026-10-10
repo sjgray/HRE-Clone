@@ -1,0 +1,41 @@
+Commodore High Res Graphic Emulator for 8296
+===================================================
+324890-01 Rev B,  FAB No. 324891-01 Rev B
+
+Parts List
+
+
+U1  - 74LS257APC  (16 pin, Quad 2 to 1 MUX)
+U2  - 74LS174     (16 pin, Hex D flip-flop, common clear)
+U3  - 74LS257APC  (16 pin, Quad 2 to 1 MUX)
+U4  - 74LS244N    (20 pin, Octal buffer)
+U5  - 2532        (24 pin, EPROM)
+U6  - Header      (24 pin, To mainboard UC5 - ChrGen ROM)
+U7  - 74LS05      (14 pin, Hex Inverter, open col)
+U8  - 74LS155N    (16 pin, Dual 2 to 4 decoder)
+U9  - 74LS257APC  (16 pin, Quad 2 to 1 MUX)
+U10 - Header      (40 pin, To mainboard UC9 - 6545 CRTC)
+U11 - MOS 6545-1  (40 pin, from Main Board)
+U12 - Header      (14 pin, To mainboard JU1 thru JU8)
+U13 - 74LS02      (14 pin, Quad 2-input NOR)
+
+R1 - 3300 ohm (Or, Or, Red)
+R2 - 3300 ohm (Or, Or, Red)
+R3 - 3300 ohm (Or, Or, Red)
+R4 - 3300 ohm (Or, Or, Red)
+R5 - 3300 ohm (Or, Or, Red)
+
+C1
+C2
+C3
+C4 - 100n 3MC
+
+* 4-position DIP switch (1=Dn,2=Dn,3=Up,4=Up)
+* Ribbon Cable to JU1 thru JU8
+
+
+
+On 8296 Option Roms
+
+UE9  324993-02 HiRes BASIC
+UE10 324992-02 HiRes Emulator

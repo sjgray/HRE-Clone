@@ -1,0 +1,304 @@
+Netlist: ASSY 324890-01 REV B
+Author: Martin Hoffmann-Vetter (Germany)
+Version: 0.1 (2013-04-04)
+
+Parts:
+======
+
+U1  16 74LS258
+U2  16 74LS174
+U3  16 74LS257
+U4  20 74LS244
+U5  24 2532 (CHARGEN)
+U6  24 Socket CHARGEN (2532, to UC5)
+U7  14 74LS05
+U8  16 74LS155
+U9  16 74LS257
+U10 40 Socket CRTC (6545, to UC9)
+U11 40 6545-1 (CRTC)
+U12 14 Connector (to Onboard Jumpers JU1 .. JU7)
+U13 14 74LS02
+DIP  8 Switch (Replace the Onboard Jumpers)
+
+U12 Connector
+-------------
+ JU1  1 /RAMSELA  -  GND  14
+ JU2  2 /RAMSEL9  -  GND  13
+ JU3  3 /RAMSELA  -  PA0  12
+ JU4  4 /RAMSEL9  -  PA1  11
+ JU5  5 /RAMON    -  PA2  10
+ JU6  6 /SELEXP   -  /CSA  9
+ JU7  7 /SELEXP   -  /CS9  8
+
+74LS244
+-------
+  1 /1G  VCC 20
+  2 1A1  /2G 19
+  3 2Y4  1Y1 18
+  4 1A2  2A4 17
+  5 2Y3  1Y2 16
+  6 1A3  2A3 15
+  7 2Y2  1Y3 14
+  8 1A4  2A2 13
+  9 2Y1  1Y4 12
+ 10 GND  2A1 11
+
+74LS257
+-------
+  1 SEL VCC 16
+  2 1A   /G 15
+  3 1B   4A 14
+  4 1Y   4B 13
+  5 2A   4Y 12
+  6 2B   3A 11
+  7 2Y   3B 10
+  8 GND  3Y  9
+
+74LS258
+-------
+  1 SEL VCC 16
+  2 1A   /G 15
+  3 1B   4A 14
+  4 /1Y  4B 13
+  5 2A  /4Y 12
+  6 2B   3A 11
+  7 /2Y  3B 10
+  8 GND /3Y  9
+
+74LS155
+-------
+  1 1C   VCC 16
+  2 /1G  /2C 15
+  3 B    /2G 14
+  4 1Y3    A 13
+  5 1Y2  2Y3 12
+  6 1Y1  2Y2 11
+  7 1Y0  2Y1 10
+  8 GND  2Y0  9
+
+74LS05
+------
+  1 1A   VCC 14
+  2 /1Y   6A 13
+  3 2A   /6Y 12
+  4 /2Y   5A 11
+  5 3A   /5Y 10
+  6 /3Y   4A  9
+  7 GND  /4Y  8
+
+74LS02
+------
+  1 /1Y  VCC 14
+  2 1A   /4Y 13
+  3 1B    4B 12
+  4 /2Y   4A 11
+  5 2A   /3Y 10
+  6 2B    3B  9
+  7 GND   3A  8
+
+74LS174
+-------
+  1 /CLR  VCC 16
+  2 1Q     6Q 15
+  3 1D     6D 14
+  4 2D     5D 13
+  5 2Q     5Q 12
+  6 3D     4D 11
+  7 3Q     4Q 10
+  8 GND   CLK  9
+
+6545
+----
+  1 GND   VSYNC 40
+  2 /RES  HSYNC 39
+  3 LP      RA0 38
+  4 MA0     RA1 37
+  5 MA1     RA2 36
+  6 MA2     RA3 35
+  7 MA3     RA4 34
+  8 MA4      D0 33
+  9 MA5      D1 32
+ 10 MA6      D2 31
+ 11 MA7      D3 30
+ 12 MA8      D4 29
+ 13 MA9      D5 28
+ 14 MA10     D6 27
+ 15 MA11     D7 26
+ 16 MA12    /CS 25
+ 17 MA13     RS 24
+ 18 DE     Phi2 23
+ 19 CURSOR  R/W 22
+ 20 VCC    CCLK 21
+
+2532
+----
+  1 A7  VCC 24
+  2 A6   A8 23
+  3 A5   A9 22
+  4 A4  VPP 21
+  5 A3  /CE 20
+  6 A2  A10 19
+  7 A1  A11 18
+  8 A0   D7 17
+  9 D0   D6 16
+ 10 D1   D5 15
+ 11 D2   D4 14
+ 12 GND  D3 13
+
+Netlist:
+========
+
+CTRC
+----
+U10  3 (LP)   - U11  3 (LP)
+U11  4 (MA0)  - U10  4
+U11  5 (MA1)  - U10  5
+U11  6 (MA2)  - U10  6
+U11  7 (MA3)  - U10  7
+U11  8 (MA4)  - U10  8
+U11  9 (MA5)  - U3   3 (1B)  - U3  14 (4A)
+U11 10 (MA6)  - U3   6 (2B)  - ????
+U11 11 (MA7)  - U3  10 (3B)  - U9   5 (2A)
+U11 12 (MA8)  - ???          - U9  11 (3A)
+U11 13 (MA9)  - ???
+U11 14 (MA10) - ???
+U11 15 (MA11) - ???
+U11 16 (MA12) - ???
+U3   4 (1Y)   - U10  9 (MA5)
+U3   7 (2Y)   - U10 10 (MA6)
+U3   9 (3Y)   - U10 11 (MA7)
+U3  12 (4Y)   - U10 12 (MA8)
+U9   7 (2Y)   - U10 13 (MA9)
+U9   4 (1Y)   - U10 14 (MA10)
+U9   9 (3Y)   - U10 15 (MA11)
+U9  12 (4Y)   - U10 16 (MA12)
+U11 17 (MA13) - U10 17
+U11 38 (RA0)  - U3   2 (1A) ??
+U11 37 (RA1)  - U3   5 (2A) ??
+U11 36 (RA2)  - U3  11 (3A) ??
+U11 ??        - U3   1 (SEL)  - U9   1 (SEL)
+U10  1 (GND)  - U3  15 (/G)
+U9   8 (GND)  - U9  15 (/G)
+U11 14 (MA10) - U13  5 (2A)   - U13  6 (2B)
+U13  4 (/2Y)  - U13  3 (1B)
+U10 34 (RA4)  - U13  2 (1A)
+U13  1 (/1Y)  - U11 ???
+U11 18 (DE)   - U10 18 (DE)
+U11 19 (CURSOR) - U10 19 (CURSOR)
+U10 21 (CCLK) - U11 21 (CCLK)
+U10 24 (RS)   - U11 24 (RS)
+U11 35 (RA3)  - U10 35 (RA3)
+U11 39 (HSYNC) - U10 39 (HSYNC)
+U11 40 (VSYNC) - U10 40 (VSYNC)
+
+Register and Jumpers (83 = Hires, 0F = Text)
+--------------------------------------------
+U10  2 (/RES) - U11  2 (/RES) - U2   1 (/CLR) ??
+U10 26 (D7)   - U11 26 (D7)
+U10 27 (D6)   - U11 27 (D6)
+U10 28 (D5)   - U11 28 (D5)
+U10 30 (D3)   - U11 30 (D3)
+U10 32 (D1)   - U11 32 (D1)
+U10 33 (D0)   - U11 33 (D0)
+
+Databit ??? for ???
+DIP  4 (JU7)  - U1  14 (4A)   - R1 (Pullup)
+U10 ??        - U11 ?? (D??)  - U2   3 (1D)
+U2   2 (1Q)   - U1  13 (4B)
+U1  12 (/1Y)  - U7  13 (6A)
+U7  12 (/Y6)  - U12 ?? (/RAMON, /RAMSEL9 or /RAMSELA)
+
+Databit ??? for ???
+DIP  3 (JU6)  - U1  11 (3A)   - R2 (Pullup)
+U10 ??        - U11 ?? (D??)  - U2   4 (2D)
+U2   5 (2Q)   - U1  10 (3B)
+U1   9 (/2Y)  - U12 ?? (/RAMON, /RAMSEL9 or /RAMSELA)
+
+Databit 2 for ???
+U10 21 (D2)   - U11 21 (D2)   - U7   9 (4A)
+U7   8 (/4Y)  - U2   6 (3D)   - R5 (Pullup)
+U2   7 (3Q)   - U7   5 (3A)
+U7   6 (/3Y)  - U12 ?? (/RAMON, /RAMSEL9 or /RAMSELA)
+
+Databits 4 and ??? for /SELEXP (/CS9 or /CSA)
+DIP  2        - U1   5 (2A)   - R3 (Pullup)
+U10 23 (D4)   - U11 23 (D4)   - U2  11 (4D)
+U2  10 (4Q)   - U1   6 (2B)
+U1   7 (/3Y)  - U13 12 (4B)
+U12  8 (/CS9) - U13 11 (4A)
+U13 13 (/4Y)  - U7   3 (2A)
+DIP  1        - U1   3 (1A)   - R4 (Pullup)
+U10 ??        - U11 ?? (D??)  - U2  13 (5D)
+U2  12 (5Q)   - U1   3 (1B)
+U1   4 (/1Y)  - U13  9 (3B)
+U12  9 (/CSA) - U13  8 (3A)
+U13 10 (/3Y)  - U7   1 (1A)
+U7   4 (/2Y)  - U7   2 (/1Y)  - U12 6 - U12 7 (/SELEXP) ??
+
+Databits ??? for Selecting Jumper or Register
+U10 ??        - U11 ?? (D??)  - U2  14 (6D)
+U2  15 (6Q)   - U1   1 (SEL)
+
+Address Decoding
+----------------
+U8  ??        - U2   9 (CLK)
+U10 25 (/CS)  - U8   3 (B)
+U10 22 (R/W)  - U11 22 (R/W)  - U8  ??
+U10 23 (Phi2) - U11 23 (Phi2) - U8   1 (1C)
+U8   9 (2Y0)  - U11 ??
+
+CHARGEN and Latch
+-----------------
+U6   8 (A0)   - U5   8 (A0)
+U6   7 (A1)   - U5   7 (A1)
+U6   6 (A2)   - U5   6 (A2)
+U6   5 (A3)   - U5   5 (A3)   - U4   8 (1A4) ??
+U4  12 (1Y4)  - U5   9 (D0)   - U6   9 (D0)
+U6   4 (A4)   - U5   4 (A4)   - U4  13 (2A2)
+U4   7 (2Y2)  - U5  10 (D1)   - U6  10 (D1)
+U6   3 (A5)   - U5   3 (A5)   - U4   6 (1A3) ??
+U4  14 (1Y3)  - U5  11 (D2)   - U6  11 (D2) ??
+U6   2 (A6)   - U5   2 (A6)   - U4  15 (2A3)
+U4   5 (2Y3)  - U5  13 (D3)   - U6  13 (D3)
+U6   1 (A7)   - U5   1 (A7)   - U4   2 (1A1) ??
+U4  18 (1Y1)  - U5  14 (D4)   - U6  14 (D4)
+U6  23 (A8)   - U5  23 (A8)   - U4  17 (2A4) ??
+U4   3 (2Y4)  - U5  15 (D5)   - U6  15 (D5) ??
+U6  22 (A9)   - U5  22 (A9)   - U4   4 (1A2)
+U4  16 (1Y2)  - U5  16 (D6)   - U6  16 (D6)
+U12 12 (PA0)                  - U4  11 (2A1)
+U4   9 (2Y1)  - U5  17 (D7)   - U6  17 (D7) ??
+???           - U4   1 (/1G)  - U4  19 (/2G)  - U5  21 (VPP)  - U6 21 (VPP)
+U6  18 (A11)  - U5  18 (A11)
+U6  19 (A10)  - U5  19 (A10)
+U5  12 (GND)  - U5  20 (/CE)
+
+Note:
+Why is PA0 used? What's about the highest data bit (D7), because the addresses at the chargen
+is only 7 bit. The highest bit is used for the reverse characters! This bit is available
+onboard at a pad via UD4 Pin2. Is this connected to PA0 from the userport? If this connection
+is make, never switch this userport bit to output!
+
+Note:
+U6 Pin 21 goes to the clear input of a onboard flip flop (UD4 Pin 1). This flip flop stores the
+reverse state. If the graphics board put this pin to low, is disabled the reverse state.
+So in hires mode this pin must be low! But who drives this?
+
+Note:
+U10 Pin 25 is the /CS for the original CRTC. This mask all addresses from E880 to E8FF. The
+register on the graphics board has addess E888. From where come A3?
+
+
+Address Translation ???:
+========================
+
+U10  U11  U11 
+     TEXT HIRES
+MA5  MA5  RA0
+MA6  MA6  RA1
+MA7  MA7  RA2
+MA8  MA8  MA5
+MA9  MA9  MA6
+MA10 MA10 MA7
+MA11 MA11 MA8
+MA12 MA12 MA9
