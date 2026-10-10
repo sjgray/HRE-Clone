@@ -1,0 +1,31 @@
+This information comes from Michal Pleban, <kontakt@michau.name>, http://www.cbm-ii.com/
+
+----------------------------------------------------------------------------------------
+
+This is a short information about the HRE (HiRes Emulator) graphics board for PET 8296. This is a small board that is installed on the mainboard into sockets for the CRTC and character ROM. It adds he ability to display 512x256 graphics on the built-in monitor.
+
+The board is accompanied with two extension ROMs:
+
+324992-02 HiRes Emulator (at $9000)
+
+324993-02 HiRes BASIC (at $A000)
+
+The ROMs are initialized by the command:
+
+SYS 36864
+
+After that, the computer recognizes additional BASIC commands like DISPLAY, PLOT and so on; these commands are identical to those of the HiRes Graphics boards based on Thomson chips. All BASIC programs written for the HRG boards should also work on the HRE (albeit much slower).
+
+Upon initialization, the ROM code writes some routines into expansion RAM as $8800 - they are used to manipulate the bitmap data. The actual bitmap is located in expansion RAM at addresses $A000-$DFFF, and is organized linearly (first 64 bytes form the first display line, then comes the next line and so on).
+
+The RAM is accessed by writing the value #$83 into $E888. This is a register in the CRTC memory space that is intercepted by the board and serves as a latch to drive jumpers on the 8296D mainboard. Because the ROMs are banked out this way, all video memory manipulation must happen with interrupts disabled. Normal ROM operation is restored by writing #$0F into $E888.
+
+The board is initialized into graphics mode by modifying the following values in CRTC registers (it is done by the routine located at $8C1A):
+
+* Register $01 (horizontal displayed) = #$20
+* Register $02 (horizontal sync position) = original + #$02
+* Register $06 (vertical displayed) = #$20
+* Register $07 (vertical sync position) = original + #$04
+* Register $0C (RAM address high) = #$02
+
+The last value causes the board to switch into graphics mode; former values set up proper screen dimensions for 512x256 display.
