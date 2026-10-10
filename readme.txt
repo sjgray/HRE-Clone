@@ -14,3 +14,9 @@ rather than the VDP chip.
 This is a work-in-progress. It is being
 cloned using Kicad and some pictures of the
 board. This is not yet complete.
+
+PCB........ Kicad Files (work in progress)
+Firmware... Will be added later
+Pic........ Renders and (eventually) PCB pics
+
+Steve

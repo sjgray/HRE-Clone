@@ -11765,7 +11765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-16_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 128.27 61.214 0)
 			(hide yes)
 			(show_name no)
@@ -11884,7 +11884,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-16_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 189.23 58.166 0)
 			(hide yes)
 			(show_name no)
@@ -12003,7 +12003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-16_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 260.604 58.674 0)
 			(hide yes)
 			(show_name no)
@@ -12122,7 +12122,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-20_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
 			(at 48.514 58.928 0)
 			(hide yes)
 			(show_name no)
@@ -12253,7 +12253,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-24_W15.24mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-24_W15.24mm"
 			(at 80.518 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -12396,7 +12396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-24_W15.24mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-24_W15.24mm"
 			(at 144.526 108.458 0)
 			(hide yes)
 			(show_name no)
@@ -12539,7 +12539,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 190.754 91.186 0)
 			(hide yes)
 			(show_name no)
@@ -12652,7 +12652,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 190.754 101.346 0)
 			(hide yes)
 			(show_name no)
@@ -12765,7 +12765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 190.754 111.506 0)
 			(hide yes)
 			(show_name no)
@@ -12878,7 +12878,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 190.754 121.666 0)
 			(hide yes)
 			(show_name no)
@@ -12991,7 +12991,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 190.754 130.556 0)
 			(hide yes)
 			(show_name no)
@@ -13104,7 +13104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 190.754 139.446 0)
 			(hide yes)
 			(show_name no)
@@ -13217,7 +13217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-16_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 262.128 95.504 0)
 			(hide yes)
 			(show_name no)
@@ -13336,7 +13336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-16_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 256.794 129.286 0)
 			(hide yes)
 			(show_name no)
@@ -13842,7 +13842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 251.46 159.258 0)
 			(hide yes)
 			(show_name no)
@@ -13955,7 +13955,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 251.46 171.958 0)
 			(hide yes)
 			(show_name no)
@@ -14068,7 +14068,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 251.714 186.944 0)
 			(hide yes)
 			(show_name no)
@@ -14181,7 +14181,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 251.714 200.914 0)
 			(hide yes)
 			(show_name no)
@@ -14531,7 +14531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Housings_DIP:DIP-14_W7.62mm_LongPads"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 189.23 181.102 0)
 			(hide yes)
 			(show_name no)
