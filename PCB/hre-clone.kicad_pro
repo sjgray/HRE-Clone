@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.8,
+          "height": 1.6,
+          "width": 1.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -690,7 +690,7 @@
         "uuid": "a04905f6-9b8c-47b8-8444-c397d49ca613"
       }
     ],
-    "used_designators": "R5-6,SW1,U10-11",
+    "used_designators": "R5-6,SW1,U10-11,U14",
     "variants": []
   },
   "sheets": [
