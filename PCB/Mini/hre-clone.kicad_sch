@@ -306,6 +306,295 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Network04_US"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RN"
+				(at -7.62 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Network04_US"
+				(at 5.08 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_THT:R_Array_SIP5"
+				(at 6.985 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "4 resistor network, star topology, bussed resistors, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R network star-topology"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R?Array?SIP*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Network04_US_0_1"
+				(rectangle
+					(start -6.35 -3.175)
+					(end 3.81 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -5.08 2.286)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.286) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.286) (xy -5.08 1.524) (xy -4.318 1.1684) (xy -5.842 0.508) (xy -4.318 -0.1524) (xy -5.842 -0.8382)
+						(xy -4.318 -1.524) (xy -5.842 -2.1844) (xy -5.08 -2.54) (xy -5.08 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 2.286)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 1.524) (xy -1.778 1.1684) (xy -3.302 0.508) (xy -1.778 -0.1524) (xy -3.302 -0.8382)
+						(xy -1.778 -1.524) (xy -3.302 -2.1844) (xy -2.54 -2.54) (xy -2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.286)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 1.524) (xy 0.762 1.1684) (xy -0.762 0.508) (xy 0.762 -0.1524) (xy -0.762 -0.8382)
+						(xy 0.762 -1.524) (xy -0.762 -2.1844) (xy 0 -2.54) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.286) (xy 2.54 1.524) (xy 3.302 1.1684) (xy 1.778 0.508) (xy 3.302 -0.1524) (xy 1.778 -0.8382)
+						(xy 3.302 -1.524) (xy 1.778 -2.1844) (xy 2.54 -2.54) (xy 2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Network04_US_1_1"
+				(pin passive line
+					(at -5.08 5.08 270)
+					(length 2.54)
+					(name "common"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 90)
+					(length 1.27)
+					(name "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 1.27)
+					(name "R2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "R3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 1.27)
+					(name "R4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GPU:MC6845"
 			(pin_names
 				(offset 1.016)
@@ -5879,7 +6168,7 @@
 		(uuid "6a13e951-83a0-41cb-9ae6-76e8a0a54fe1")
 	)
 	(junction
-		(at 322.072 182.626)
+		(at 322.58 180.848)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7fd3ddee-55c1-4393-a074-3cdc823f920d")
@@ -5891,7 +6180,7 @@
 		(uuid "872bc59c-4736-4690-aa92-8652eccb64b5")
 	)
 	(junction
-		(at 324.612 180.086)
+		(at 325.12 178.308)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f051e1e-f25a-484b-a641-3a8a629ab898")
@@ -5903,7 +6192,7 @@
 		(uuid "b99f4db5-3dff-41ff-8417-0f4ee207a8b5")
 	)
 	(junction
-		(at 319.532 185.166)
+		(at 320.04 183.388)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c07b226b-8a59-4d0a-9cc0-29e1973033cc")
@@ -5915,7 +6204,7 @@
 		(uuid "cd59137f-00fd-4af0-b3c1-de5a8113a449")
 	)
 	(junction
-		(at 327.152 177.546)
+		(at 327.66 175.768)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ffb53de1-c4dd-4d86-8859-54218ea410f3")
@@ -6056,7 +6345,7 @@
 	)
 	(wire
 		(pts
-			(xy 319.532 185.166) (xy 331.978 185.166)
+			(xy 320.04 183.388) (xy 332.486 183.388)
 		)
 		(stroke
 			(width 0)
@@ -6066,7 +6355,7 @@
 	)
 	(wire
 		(pts
-			(xy 319.532 175.768) (xy 319.532 185.166)
+			(xy 320.04 173.99) (xy 320.04 183.388)
 		)
 		(stroke
 			(width 0)
@@ -6146,7 +6435,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.072 175.768) (xy 322.072 185.928)
+			(xy 322.58 173.99) (xy 322.58 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6256,7 +6545,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.152 175.768) (xy 327.152 185.928)
+			(xy 327.66 173.99) (xy 327.66 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6286,7 +6575,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.072 182.626) (xy 331.978 182.626)
+			(xy 322.58 180.848) (xy 332.486 180.848)
 		)
 		(stroke
 			(width 0)
@@ -6296,7 +6585,7 @@
 	)
 	(wire
 		(pts
-			(xy 319.532 185.166) (xy 319.532 185.928)
+			(xy 320.04 183.388) (xy 320.04 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6306,7 +6595,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.152 177.546) (xy 331.724 177.546)
+			(xy 327.66 175.768) (xy 332.232 175.768)
 		)
 		(stroke
 			(width 0)
@@ -6336,7 +6625,7 @@
 	)
 	(wire
 		(pts
-			(xy 324.612 175.768) (xy 324.612 185.928)
+			(xy 325.12 173.99) (xy 325.12 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6376,7 +6665,7 @@
 	)
 	(wire
 		(pts
-			(xy 324.612 180.086) (xy 331.724 180.086)
+			(xy 325.12 178.308) (xy 332.232 178.308)
 		)
 		(stroke
 			(width 0)
@@ -7100,7 +7389,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 322.072 201.168 270)
+		(at 322.58 199.39 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7110,7 +7399,7 @@
 		)
 		(uuid "16904de5-4bbd-493d-be63-e6d271ded6d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 322.072 207.3695 90)
+			(at 322.58 205.5915 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7159,30 +7448,6 @@
 		(uuid "16c0f83b-5b53-404c-ad02-57e101ab13b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.363 134.112 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 324.612 168.148 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "16d8fce9-0932-4b08-9c54-eef1b82a6d7e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 324.612 162.1884 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7556,7 +7821,7 @@
 	)
 	(global_label "DIP2"
 		(shape input)
-		(at 331.978 182.626 0)
+		(at 332.486 180.848 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7566,7 +7831,7 @@
 		)
 		(uuid "28622b26-81d4-4b0d-93b9-f57ebe9d9d0b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 338.6633 182.626 0)
+			(at 339.1713 180.848 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8348,7 +8613,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 324.612 201.168 270)
+		(at 325.12 199.39 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8358,7 +8623,7 @@
 		)
 		(uuid "4cd5011a-397d-4bba-b1be-a5e8542901ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 324.612 207.3695 90)
+			(at 325.12 205.5915 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8732,7 +8997,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 319.532 168.148 90)
+		(at 320.04 163.83 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8740,9 +9005,9 @@
 			)
 			(justify left)
 		)
-		(uuid "5a93fd0a-59a2-4472-9d48-aacf5ffc2542")
+		(uuid "5ac21a61-8fb2-4a17-98d0-e97272d3e10c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 319.532 162.1884 90)
+			(at 320.04 157.8704 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8876,7 +9141,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 327.152 201.168 270)
+		(at 327.66 199.39 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8886,7 +9151,7 @@
 		)
 		(uuid "63342b75-e6c6-4b01-b1d8-38eb7b153418")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 327.152 207.3695 90)
+			(at 327.66 205.5915 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9452,7 +9717,7 @@
 	)
 	(global_label "DIP4"
 		(shape input)
-		(at 331.724 177.546 0)
+		(at 332.232 175.768 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9462,7 +9727,7 @@
 		)
 		(uuid "7c43a11e-b897-4f5b-b64e-e780c0eaea83")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 338.4093 177.546 0)
+			(at 338.9173 175.768 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10316,7 +10581,7 @@
 	)
 	(global_label "DIP3"
 		(shape input)
-		(at 331.724 180.086 0)
+		(at 332.232 178.308 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10326,7 +10591,7 @@
 		)
 		(uuid "a2938f75-84a1-4285-b493-f93e8a44b0b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 338.4093 180.086 0)
+			(at 338.9173 178.308 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10375,30 +10640,6 @@
 		(uuid "a6dc6836-3e7a-4639-9c4d-f702bf08c7f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 283.8839 131.826 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 327.152 168.148 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a794a1a0-50a3-4105-a808-716bdc5b32f8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 327.152 162.1884 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11060,7 +11301,7 @@
 	)
 	(global_label "DIP1"
 		(shape input)
-		(at 331.978 185.166 0)
+		(at 332.486 183.388 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11070,7 +11311,7 @@
 		)
 		(uuid "cbf20cbe-df30-4d61-8bd7-b8b4622377cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 338.6633 185.166 0)
+			(at 339.1713 183.388 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12092,7 +12333,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 319.532 201.168 270)
+		(at 320.04 199.39 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12102,7 +12343,7 @@
 		)
 		(uuid "fa8d2f4e-708f-4ab8-acb3-e57301656559")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 319.532 207.3695 90)
+			(at 320.04 205.5915 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12151,30 +12392,6 @@
 		(uuid "fcc7f506-2ffc-4100-8978-2112c8363496")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 71.673 123.698 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 322.072 168.148 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fd10a93b-9fc1-40a7-b4e8-15e19fc3aab4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 322.072 162.1884 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13956,314 +14173,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 327.152 171.958 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000571ad0e9")
-		(property "Reference" "R1"
-			(at 326.136 175.768 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 327.152 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 325.374 171.958 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 327.152 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 327.152 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3a0fb9ce-bf71-4cc4-87b7-c18458c31307")
-		)
-		(pin "2"
-			(uuid "5f60d921-bf99-49ef-9331-01770af3f5c4")
-		)
-		(instances
-			(project "hre-clone"
-				(path "/a04905f6-9b8c-47b8-8444-c397d49ca613"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 324.612 171.958 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000571ad189")
-		(property "Reference" "R2"
-			(at 323.596 176.022 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 324.612 171.958 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 322.834 171.958 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 324.612 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 324.612 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a11c92ef-a138-4864-8d38-6d5fc9bac54b")
-		)
-		(pin "1"
-			(uuid "4ca05b35-0e0e-412e-98e9-f2f93d75849d")
-		)
-		(instances
-			(project "hre-clone"
-				(path "/a04905f6-9b8c-47b8-8444-c397d49ca613"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 322.072 171.958 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000571ad1ed")
-		(property "Reference" "R3"
-			(at 321.31 176.022 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 322.072 171.958 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 320.294 171.958 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.072 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 322.072 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e6d25332-8f74-4861-96e2-491d1d4f09a5")
-		)
-		(pin "1"
-			(uuid "416fd6cc-24fa-4484-854a-e5dd799727a0")
-		)
-		(instances
-			(project "hre-clone"
-				(path "/a04905f6-9b8c-47b8-8444-c397d49ca613"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 319.532 171.958 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000571ad24a")
-		(property "Reference" "R4"
-			(at 318.516 176.022 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 319.532 171.958 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 317.754 171.958 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 319.532 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 319.532 171.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3157e00-a9ec-4ba9-b6e2-576c1481cd16")
-		)
-		(pin "2"
-			(uuid "3b4f21af-4be0-4fbe-89cb-b00cad73fc28")
-		)
-		(instances
-			(project "hre-clone"
-				(path "/a04905f6-9b8c-47b8-8444-c397d49ca613"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "hre-clone-rescue:7402")
 		(at 231.648 198.628 0)
 		(unit 1)
@@ -15067,7 +14976,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x04")
-		(at 324.612 193.548 90)
+		(at 325.12 191.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15078,7 +14987,7 @@
 		(fields_autoplaced yes)
 		(uuid "10d4ecfb-8bf0-4d68-9e76-d1f81d0d762a")
 		(property "Reference" "SW1"
-			(at 330.708 192.2779 90)
+			(at 331.216 190.4999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15089,7 +14998,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x04"
-			(at 330.708 194.8179 90)
+			(at 331.216 193.0399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15100,7 +15009,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile"
-			(at 324.612 193.548 0)
+			(at 325.12 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15111,7 +15020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 324.612 193.548 0)
+			(at 325.12 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15122,7 +15031,7 @@
 			)
 		)
 		(property "Description" "4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 324.612 193.548 0)
+			(at 325.12 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15160,6 +15069,97 @@
 			(project "hre-clone"
 				(path "/a04905f6-9b8c-47b8-8444-c397d49ca613"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network04_US")
+		(at 325.12 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a2b1672-b7af-4695-b407-a6287a3ab095")
+		(property "Reference" "RN1"
+			(at 330.2 167.8939 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3300 ohm"
+			(at 330.2 170.4339 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP5"
+			(at 332.105 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 325.12 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4 resistor network, star topology, bussed resistors, small US symbol"
+			(at 325.12 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5530ae15-8012-4752-8ba7-9176b7774aab")
+		)
+		(pin "5"
+			(uuid "e4fcfa1f-3419-45b2-8549-dc772730be39")
+		)
+		(pin "1"
+			(uuid "a287b7fb-8e35-4c51-a367-ee02c16c8b79")
+		)
+		(pin "3"
+			(uuid "8ad4f91d-aaa5-4432-9963-432f23e76b67")
+		)
+		(pin "4"
+			(uuid "fbdfdc74-9dd2-46c9-b662-50d06e28b71f")
+		)
+		(instances
+			(project "hre-clone"
+				(path "/a04905f6-9b8c-47b8-8444-c397d49ca613"
+					(reference "RN1")
 					(unit 1)
 				)
 			)
@@ -15571,7 +15571,7 @@
 		(dnp no)
 		(uuid "a791ede5-c528-4a9d-ad0e-3bb95b3a90f2")
 		(property "Reference" "R5"
-			(at 123.444 27.94 90)
+			(at 119.38 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15580,7 +15580,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "3300"
 			(at 121.412 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
